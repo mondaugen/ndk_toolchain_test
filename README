@@ -1,0 +1,13 @@
+Building a test shared library for Android applications.
+
+To build the most commond architectures, run make_tcs.sh to produce the
+toolchains required.
+
+Then to build shared libraries for each architecture, run
+build_test_all_arch.sh. The resulting libraries end up in lib/ and the header
+in include/.
+
+To see how to include the library in an application, see hello-libs-external.
+
+The libraries produced by build_test_all_arch.sh have been shown to work on
+Android SDK 26 running on an aarch64 device.
